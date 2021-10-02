@@ -1,0 +1,16 @@
+.logo__desktop
+  display: none
+
+  @media (min-width: $desktop-width)
+    display: block
+    width: 100%
+
+.logo__tablet
+  display: none
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    display: block
+
+.logo__mobile
+  @media (min-width: $tablet-width)
+    display: none

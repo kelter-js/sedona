@@ -1,0 +1,18 @@
+@mixin fstyle($font-size, $line-height, $color, $font-weight: 400, $transform : none)
+  font-size: $font-size
+  line-height: $line-height
+  color: $color
+  text-transform: $transform
+  font-weight: $font-weight
+
+@mixin elementSize($width, $height)
+  width: $width
+  min-height: $height
+
+@mixin absoluteElement($position, $top, $left)
+  position: $position
+  top: $top
+  left: $left
+
+@mixin setCenterPosition()
+  margin: 0 auto
