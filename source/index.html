@@ -28,11 +28,11 @@
       </svg>
     </a>
 
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav main-nav--withoutjs main-nav--closed">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper container">
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active main-nav__item--contrast-color">
+          <li class="main-nav__item main-nav__item--active">
             <a href="">главная</a>
           </li>
           <li class="main-nav__item main-nav__item--contrast-color">
@@ -49,9 +49,13 @@
     </nav>
 
     <div class="page-header__promo-wrapper">
-
+      <svg class="page-header__promo" width="456" height="350" fill="none" role="img" aria-label="Welcome to gorgeous Sedona. Because the Grand Canyon sucks!">
+        <use xlink:href="img/promo-text.svg#promo-text"/>
+      </svg>
     </div>
   </header>
+
+  <script src="js/main-script.js"></script>
 </body>
 
 </html>

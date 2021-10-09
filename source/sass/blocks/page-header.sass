@@ -3,7 +3,9 @@
   top: 0
   left: 50%
   height: 84px
-  width: 31.8%
+  width: 28.6%
+  margin-left: -14.3%
+  z-index: 1
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
     width: 13.2%
@@ -11,3 +13,18 @@
   @media (min-width: $desktop-width)
     height: 96.4px
     width: 13.2%
+
+.page-header__promo-wrapper
+  position: relative
+  min-height: 389px
+  background-image: url('../img/icons/triangle-pattern.svg'), url('../img/mobile-promo-background.jpg')
+  background-position: 50% 100.1%
+  background-repeat: no-repeat
+
+.page-header__promo
+  position: absolute
+  top: 90px
+  left: 50%
+  width: 88.1%
+  height: 214px
+  margin-left: -44%

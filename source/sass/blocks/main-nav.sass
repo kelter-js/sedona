@@ -1,0 +1,84 @@
+@media (max-width: $mobile-width-only)
+  .main-nav--closed .main-nav__list
+    display: none
+
+  .main-nav--closed .main-nav__toggle
+    &::before
+      content: ""
+      position: absolute
+      top: 17px
+      right: 20px
+      width: 23px
+      height: 4px
+      background-color: $blue
+      box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue
+
+  .main-nav--opened .main-nav__toggle
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      top: 50%
+      left: 50%
+      width: 28px
+      height: 4px
+      margin-top: -2px
+      margin-left: -14px
+      background-color: $white
+
+    &::before
+      transform: rotate(45deg)
+      box-shadow: none
+
+    &::after
+      transform: rotate(-45deg)
+
+  .main-nav--withoutjs .main-nav__toggle
+    display: none
+
+  .main-nav--withoutjs .main-nav__list
+    display: block
+
+.main-nav__toggle
+  position: absolute
+  top: 0
+  right: 0
+  height: 56px
+  width: 63.1px
+  padding: 0
+  background: none
+  border: none
+  cursor: pointer
+
+.main-nav
+  position: relative
+  min-height: 56px
+  z-index: 2
+
+.main-nav__list
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: $blue
+
+.main-nav__item
+  width: 100%
+  margin-bottom: 1px
+  padding-top: 9px
+  padding-bottom: 5px
+  text-align: center
+  border-bottom: 1px solid $dark-blue
+
+.main-nav__item:not(:first-of-type):not(:last-of-type)
+  padding-top: 8px
+  border-top: 1px solid $light-blue
+
+.main-nav__item:last-of-type
+  margin-bottom: 0
+  border-bottom: none
+  border-top: 1px solid $light-blue
+
+.main-nav__item a
+  text-decoration: none
+
+  @include fstyle(18px, 40px, $white, 700, uppercase)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <symbol id="logo-desktop" viewBox="0 0 187 97" preserveAspectRatio="none">
+  <symbol id="logo-desktop" preserveAspectRatio="none">
     <g>
       <path d="M186.6 0H0L80.5 90.5C87.6 98.4 99.1 98.4 106.2 90.5L186.6 0Z" fill="#81B3D3"/>
       <path d="M43.2 0.7L92.8 59.1L142.1 1.1L43.2 0.7Z" fill="#23A9E1"/>
@@ -84,7 +84,7 @@
       <path d="M76 42.1C76.1 42.2 76.3 42.4 76 42.1C73.1 39.9 69.7 40.5 67.5 43.2C66.5 44.4 65.5 45.6 64.5 46.8C64.9 47.3 65.3 46.7 65.8 47C66.2 47.3 72 52.1 72.1 52.4C72.3 52.9 71.8 52.9 72.2 53.3C72.4 53.4 76.7 48.1 77.1 47.1C78 45.3 77.4 43.4 76 42.1ZM74.7 48.9C74.5 49.2 74.7 49 74 49.6C73.7 49.9 67.6 44.9 67.8 44.7C68.6 43.8 70.4 43.1 71.4 43.4C73.6 43.9 76.6 46.6 74.7 48.9Z" fill="white"/>
     </g>
   </symbol>
-  <symbol id="logo-tablet" viewBox="0 0 102 84" preserveAspectRatio="none">
+  <symbol id="logo-tablet" preserveAspectRatio="none">
     <g>
       <path d="M1 0.700195L50.6 59.1002L99.9 1.1002L1 0.700195Z" fill="#23A9E1"/>
       <path d="M79.8001 17.3002C74.7001 17.3002 69.7001 17.4002 64.6001 17.4002C70.6001 10.5002 73.3001 11.2002 79.8001 17.3002Z" fill="white"/>
