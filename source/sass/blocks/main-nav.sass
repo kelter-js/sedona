@@ -50,6 +50,9 @@
   border: none
   cursor: pointer
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    display: none
+
 .main-nav
   position: relative
   min-height: 56px
@@ -61,6 +64,11 @@
   list-style: none
   background-color: $blue
 
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    display: flex
+    flex-wrap: wrap
+    background: none
+
 .main-nav__item
   width: 100%
   margin-bottom: 1px
@@ -69,16 +77,39 @@
   text-align: center
   border-bottom: 1px solid $dark-blue
 
-.main-nav__item:not(:first-of-type):not(:last-of-type)
-  padding-top: 8px
-  border-top: 1px solid $light-blue
+  &:not(:first-of-type):not(:last-of-type)
+    padding-top: 8px
+    border-top: 1px solid $light-blue
 
-.main-nav__item:last-of-type
-  margin-bottom: 0
-  border-bottom: none
-  border-top: 1px solid $light-blue
+  &:last-of-type
+    margin-bottom: 0
+    border-bottom: none
+    border-top: 1px solid $light-blue
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    width: 19.9%
+    margin: 0
+    padding: 0
+    border: none
+
+    &:not(:first-of-type):not(:last-of-type),
+    &:last-of-type
+      padding: 0
+      border: none
+
+.main-nav__item--separate
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    margin-right: 20.4%
 
 .main-nav__item a
   text-decoration: none
 
   @include fstyle(18px, 40px, $white, 700, uppercase)
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    display: inline-block
+    width: 100%
+    padding-top: 16px
+    padding-bottom: 14px
+
+    @include fstyle(14px, 26px, $black, 700, uppercase)

@@ -1,7 +1,7 @@
 {
-  "name": "sedona",
+  "name": "socialnetwork",
   "private": true,
-  "description": "Sedona",
+  "description": "Social Network",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/plugin-proposal-private-methods": "^7.14.5",
