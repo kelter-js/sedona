@@ -13,6 +13,9 @@
       background-color: $blue
       box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue
 
+  .main-nav--opened
+    margin-bottom: -2px
+
   .main-nav--opened .main-nav__toggle
     &::before,
     &::after
@@ -50,7 +53,7 @@
   border: none
   cursor: pointer
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+  @media (min-width: $tablet-width) and (max-width: $desktop-width)
     display: none
 
 .main-nav
@@ -64,10 +67,13 @@
   list-style: none
   background-color: $blue
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+  @media (min-width: $tablet-width)
     display: flex
     flex-wrap: wrap
     background: none
+
+  @media (min-width: $desktop-width)
+    background: $white
 
 .main-nav__item
   width: 100%
@@ -86,7 +92,7 @@
     border-bottom: none
     border-top: 1px solid $light-blue
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+  @media (min-width: $tablet-width)
     width: 19.9%
     margin: 0
     padding: 0
@@ -97,16 +103,22 @@
       padding: 0
       border: none
 
+  @media (min-width: $desktop-width)
+    width: 19.95%
+
 .main-nav__item--separate
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
     margin-right: 20.4%
+
+  @media (min-width: $desktop-width)
+    margin-right: 20.2%
 
 .main-nav__item a
   text-decoration: none
 
   @include fstyle(18px, 40px, $white, 700, uppercase)
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+  @media (min-width: $tablet-width)
     display: inline-block
     width: 100%
     padding-top: 16px
