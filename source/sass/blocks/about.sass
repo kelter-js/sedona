@@ -45,3 +45,52 @@
 .about__break
   @media (min-width: $tablet-width)
     display: none
+
+.about__features-list
+  margin: 0
+  padding: 0
+  list-style: none
+
+.about__feature-item
+  background-color: $blue
+  overflow: auto
+
+  &:first-of-type
+    background-image: url('../img/icons/triangle-reverse-pattern.svg')
+    background-repeat: no-repeat
+
+.about__subfeatures-list
+  margin: 0
+  margin-top: 39px
+  padding: 0
+  background-color: $white
+
+.about__text-wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: 92.19%
+  margin-top: 71px
+  margin-left: 4.065%
+  margin-right: 3.75%
+  color: $white
+  text-transform: uppercase
+
+.about__feature-number,
+.about__feature-annotation,
+.about__feature-header
+  margin: 0
+
+.about__feature-number
+  margin-bottom: 25px
+
+.about__feature-annotation
+  width: 100%
+  text-align: center
+
+  @include fstyle(14px, 21px, $white, 400, uppercase)
+
+.about__feature-header
+  margin-bottom: 20px
+
+  @include fstyle(18px, 26px, $white, 700, uppercase)
