@@ -25,18 +25,31 @@
 
 .page-header__promo-wrapper
   position: relative
-  min-height: 391px
-  background-image: url('../img/icons/triangle-pattern.svg'), url('../img/mobile-promo-background.jpg')
+  min-height: 377px
+  background-image: url('../img/mobile-promo-background.jpg')
   background-position: 50% 100.1%
   background-repeat: no-repeat
 
-  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+  @media (min-width: $tablet-width)
     min-height: 518px
-    background-size: 155%, cover
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    background-image: url('../img/tablet-promo-background.jpg')
 
   @media (min-width: $desktop-width)
-    min-height: 518px
-    background-size: 100%, cover
+    background-image: url('../img/promo-background.jpg')
+
+.page-header__promo-wrapper--sidepage
+  min-height: 158px
+  background-image: url('../img/mobile-promo-background-short.jpg')
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    min-height: 290px
+    background-image: url('../img/tablet-promo-background-short.jpg')
+
+  @media (min-width: $desktop-width)
+    min-height: 301px
+    background-image: url('../img/promo-background-short.jpg')
 
 .page-header__promo
   position: absolute
@@ -44,14 +57,27 @@
   left: 50%
   width: 88.1%
   height: 214px
-  margin-left: -44%
+  transform: translate(-50%, 0)
+
+  @media (min-width: $tablet-width)
+    height: 350px
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
-    height: 350px
     width: 60%
-    margin-left: -30%
 
   @media (min-width: $desktop-width)
-    height: 350px
     width: 36%
-    margin-left: -18%
+
+.page-header__promo--sidepage
+  top: 52px
+  left: 50%
+  width: 67%
+  height: 39px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    height: 78px
+    width: 60%
+
+  @media (min-width: $desktop-width)
+    height: 80px
+    width: 36%

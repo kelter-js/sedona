@@ -1,0 +1,95 @@
+.invisible
+  display: none
+
+.interest__text-container
+  width: 280px
+  margin: 0 auto
+  padding: 38px 19px 49px 21px
+  text-align: center
+  text-transform: uppercase
+
+  @media (min-width: $tablet-width)
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-content: center
+    width: 61%
+    padding: 0
+    padding-top: 58px
+    padding-bottom: 66px
+
+.interest__header,
+.interest__date-text
+  margin: 0
+  padding: 0
+
+.interest__header
+  @media (min-width: $tablet-width)
+    font-size: 30px
+    font-weight: 700
+    line-height: 26px
+    text-transform: uppercase
+
+.interest__date-text
+  margin-bottom: 27px
+  margin-top: 19px
+  font-size: 14px
+  line-height: 24px
+
+  @media (min-width: $desktop-width)
+    width: 435px
+    margin: 42px auto
+
+.interest__find-link
+  display: block
+  padding: 14.5px 32px 17.5px 32px
+  background-color: $blue
+  color: $white
+  font-weight: 700
+  font-size: 21px
+  line-height: 26px
+  text-decoration: none
+
+  &:hover
+    background-color: $dark-blue-hover
+
+  &:active
+    background-color: $dark-blue-active
+    color: $white-active-text
+
+  @media (min-width: $desktop-width)
+    width: 458px
+
+.interest__map-container
+  margin: 0 auto
+  padding: 0
+  height: 350px
+  width: 100%
+
+  & iframe
+    width: inherit
+    height: inherit
+
+.interest__map-wrapper
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: block
+    height: 17px
+    width: 17px
+    background-color: $darker-blue
+    border: 5px solid $white
+    border-radius: 50%
+    z-index: 9
+
+.interest
+  margin-bottom: 10px
+
+  @media (min-width: $tablet-width)
+    margin-bottom: 0

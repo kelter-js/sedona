@@ -1,0 +1,462 @@
+
+.form
+  @media (min-width: $desktop-width)
+    max-width: 1200px
+    width: 100%
+    margin: 0 auto
+
+.form__form
+  @media (min-width: $tablet-width)
+    position: relative
+    padding-top: 367px
+
+  @media (min-width: $desktop-width)
+    padding-right: 120px
+    padding-left: 120px
+    padding-bottom: 61px
+    background-color: $white
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    margin-bottom: 61px
+    padding-right: 60px
+    padding-left: 60px
+
+.form__form input
+  &:hover
+    background-color: $darkest-grey
+
+  &:focus
+    background-color: $white
+    border: 4px solid $grey
+    outline: none
+    padding: 14px 18px 10px
+
+.form__form textarea
+  &:hover
+    background-color: $darkest-grey
+
+  &:focus
+    background-color: $white
+    border: 4px solid $grey
+    outline: none
+    padding: 9px 17px 25px
+
+.form__fieldset
+  padding: 0
+  border: none
+
+  @media (max-width: $mobile-width-only)
+    margin: 0
+    border-bottom: 1px solid $darkest-grey
+
+.form__fieldset--greetings,
+.form__fieldset--feedback
+  @media (min-width: $tablet-width)
+    position: absolute
+    top: 0
+    width: calc(50% - 120px)
+    padding: 0
+
+  @media (min-width: $desktop-width)
+    left: 128px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    left: 60px
+
+.form__fieldset--feedback
+  @media (min-width: $tablet-width)
+    height: 290.5px
+    min-width: 303px
+
+.form__fieldset--greetings
+  @media (min-width: $tablet-width)
+    left: unset
+    height: 294.5px
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      height: 292px
+      width: 1px
+      background-color: $dark-white
+
+  @media (min-width: $desktop-width)
+    right: 120px
+    width: 400px
+    padding-left: 79px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    right: 60px
+    min-width: 266px
+    padding-left: 58px
+
+.form__fieldset--feedback legend
+  @media (min-width: $tablet-width)
+    margin-bottom: 72.5px
+
+  @media (min-width: $desktop-width)
+    margin-left: 72px
+
+  @media (max-width: $mobile-width-only)
+    margin-bottom: 37px
+
+.form__fieldset--greetings legend
+  @media (min-width: $tablet-width)
+    margin-bottom: 54.5px
+
+.form__fieldset--visited-places legend
+  @media (max-width: $mobile-width-only)
+    margin-bottom: 37px
+
+.form__fieldset--contacts legend,
+.form__fieldset--visited-places legend,
+.form__fieldset--emotions legend
+  @media (min-width: $tablet-width)
+    width: 330px
+    margin: 0 auto
+    margin-bottom: 20.5px
+    text-align: center
+    background-color: $white
+    box-sizing: border-box
+
+.form__fieldset--contacts .form__fieldset-container,
+.form__fieldset--visited-places .form__fieldset-container,
+.form__fieldset--emotions .form__fieldset-container
+  @media (min-width: $tablet-width)
+    position: relative
+
+    &::before,
+    &::after
+      content: ''
+      position: absolute
+      top: 12px
+      left: 0
+      height: 1px
+      background-color: $dark-white
+
+    &::after
+      left: unset
+      right: 0
+
+  @media (min-width: $desktop-width)
+    &::before,
+    &::after
+      width: 280px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    &::before,
+    &::after
+      width: 123px
+
+.form__fieldset--contacts
+  @media (min-width: $tablet-width)
+    margin-bottom: 51.5px
+
+.form__fieldset--visited-places
+  @media (min-width: $desktop-width)
+    margin-bottom: 82.5px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    margin-bottom: 75.5px
+
+.form__radio-buttons-container
+  display: flex
+
+  @media (min-width: $desktop-width)
+    justify-content: space-between
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr
+    row-gap: 62px
+    width: 484px
+    margin: 0 auto
+
+  @media (max-width: $mobile-width-only)
+    flex-direction: column
+
+.form__fieldset--visited-places .form__fieldset-container
+  @media (min-width: $tablet-width)
+    &::before,
+    &::after
+      top: 25px
+
+.form__fieldset--visited-places legend
+  @media (min-width: $tablet-width)
+    margin-bottom: 58.5px
+
+.form__fieldset--emotions legend
+  @media (min-width: $tablet-width)
+    margin-bottom: 54.5px
+
+.form__fieldset:last-of-type
+  border: none
+
+.form__fieldset label
+  display: block
+
+.form__fieldset-legend
+  margin-bottom: 19px
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  text-transform: uppercase
+
+  @media (min-width: $tablet-width)
+    text-align: start
+    color: $black
+    font-size: 21px
+
+  @media (max-width: $mobile-width-only)
+    text-align: center
+
+.form__submit-container
+  @media (min-width: $tablet-width)
+    margin-top: 58px
+    display: flex
+    align-items: center
+
+.form__required-fields-text
+  @media (min-width: $tablet-width)
+    margin-left: auto
+    color: $dark-black
+    font-size: 14px
+    line-height: 26px
+    text-transform: uppercase
+
+  @media (max-width: $mobile-width-only)
+    display: none
+
+.form__fieldset-container
+  @media (min-width: $tablet-width)
+    padding: 0
+
+  @media (max-width: $mobile-width-only)
+    width: 100vw
+    padding: 20px 20px 25px
+    box-sizing: border-box
+
+.form__fieldset--feedback .form__fieldset-container
+  @media (min-width: $tablet-width)
+    padding: 0
+
+  @media (max-width: $mobile-width-only)
+    padding: 20px 20px 41px
+
+.form__fieldset--visited-places .form__fieldset-container
+  @media (min-width: $tablet-width)
+    padding: 0
+
+  @media (max-width: $mobile-width-only)
+    padding: 20px 20px 39px
+
+.form__submit-button
+  height: 58px
+  width: calc(100% - 40px)
+  margin: 26px 20px 48px
+  padding: 18.5px 32px 13.5px
+  border: none
+  color: $white
+  font-weight: 700
+  font-size: 21px
+  line-height: 26px
+  font-family: 'PT Sans'
+  box-sizing: border-box
+  background: $blue
+
+  @media (min-width: $tablet-width)
+    margin: 0
+
+  @media (min-width: $desktop-width)
+    width: 480px
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only)
+    width: 324px
+
+.form__opinion
+  resize: none
+  height: 160px
+  width: 100%
+  padding: 13px 23px 29px 21px
+  box-sizing: border-box
+  background: $grey
+  border: none
+  color: $black
+  font-weight: 700
+  font-size: 18px
+  line-height: 26px
+  font-family: 'PT Sans'
+
+.form__opinion::placeholder
+  color: $black
+
+.form__fieldset-label
+  position: relative
+  margin-left: 80px
+  margin-bottom: 54px
+  font-size: 18px
+  font-weight: 700
+
+.form__fieldset-label:last-of-type
+  margin-bottom: 0
+
+.form__fieldset-label::before
+  content: ''
+  position: absolute
+  top: -15px
+  left: -80px
+  width: 51px
+  height: 51px
+  border-radius: 6px
+  background: $grey
+
+.form__fieldset-input:checked + .form__fieldset-label::after
+  content: ''
+  position: absolute
+  top: 2px
+  left: -65px
+  width: 23px
+  height: 16px
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='17' viewBox='0 0 24 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.925 1.325L21.825 0.225C21.525 -0.075 20.925 -0.075 20.625 0.225L8.725 12.125L2.525 5.925C2.225 5.625 1.625 5.625 1.325 5.925L0.225 7.025C-0.075 7.325 -0.075 7.925 0.225 8.225L8.025 16.025C8.225 16.225 8.425 16.225 8.625 16.225C8.825 16.225 9.025 16.125 9.225 16.025L22.725 2.525C23.225 2.225 23.225 1.725 22.925 1.325Z' fill='black'/%3E%3C/svg%3E%0A")
+
+.form__fieldset-label--radio::before
+  border-radius: 50%
+
+.form__fieldset-input:checked + .form__fieldset-label--radio::after
+  top: -2px
+  left: -66px
+  height: 24px
+  width: 24px
+  background-image: none
+  border-radius: 50%
+  background-color: $dark-black
+
+.form__fieldset-label--radio
+  &:hover
+    &::before
+      background-color: $darkest-grey
+
+  &:active
+    &::before
+      background-color: $darkest-grey-active
+    &::after
+      opacity: 0.3
+
+.form__radio-buttons-container .form__fieldset-label
+  &:hover
+    &::before
+      background-color: $darkest-grey
+
+  &:active
+    &::before
+      background-color: $darkest-grey-active
+    &::after
+      opacity: 0.3
+
+.form__radio-buttons-container .form__fieldset-label
+  @media (min-width: $tablet-width)
+    margin-bottom: 0
+
+.form__fieldset-input-credentials
+  height: 58px
+  width: 100%
+  margin-left: 13px
+  padding: 18px 22px 14px
+  background: $grey
+  color: $black
+  font-family: PT Sans
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+  box-sizing: border-box
+  border: none
+
+.form__fieldset-input-credentials::placeholder
+  color: $black
+  font-family: PT Sans
+  font-size: 18px
+  font-weight: 700
+  line-height: 26px
+
+label.form__fieldset-input-label
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  color: $dark-black
+  font-family: PT Sans
+  font-size: 14px
+  line-height: 26px
+  text-transform: uppercase
+
+.form__fieldset-label--radio
+  font-size: 18px
+
+label.form__fieldset-input-label:last-child
+  margin-bottom: 0
+
+label.form__fieldset-input-label--credentials
+  flex-direction: column
+  align-items: flex-start
+  margin-left: 22px
+  margin-bottom: 8px
+
+  @media (min-width: $desktop-width)
+    margin: 0
+    margin-right: 16px
+
+  @media (min-width: $mobile-width) and (max-width: $tablet-width-only)
+    flex-direction: row
+
+.form__fieldset-input-credentials--phone,
+.form__fieldset-input-credentials--email
+  max-width: unset
+  width: 100%
+  margin: 0
+  padding-right: 63px
+
+.form__input-container
+  position: relative
+
+.form__input-container::before
+  content: ''
+  position: absolute
+  right: 0
+  top: 0
+  display: block
+  width: 58px
+  height: 58px
+  background: #E6E6E6
+  background-repeat: no-repeat
+  background-position: center
+
+.form__input-container--phone::before
+  background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z' fill='%23010101'/%3E%3C/svg%3E%0A")
+
+.form__input-container--email::before
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='12' viewBox='0 0 16 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z' fill='black'/%3E%3C/svg%3E%0A")
+
+.form__fieldset-input-credentials--phone
+  @media (max-width: $tablet-width-only)
+    margin-bottom: 14px
+
+.form__fieldset-input-credentials--email
+  margin-bottom: 3px
+
+.form__contacts_inputs-container
+  @media (min-width: $desktop-width)
+    display: flex
+    align-items: center
+
+.form__contacts-main-container
+  @media (min-width: $desktop-width)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 65.5px
+
+.form__contacts-label-name
+  @media (min-width: $desktop-width)
+    display: none

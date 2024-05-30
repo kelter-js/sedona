@@ -13,6 +13,12 @@
       background-color: $blue
       box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue
 
+    &:hover
+      opacity: 0.6
+
+    &:active
+      opacity: 0.3
+
   .main-nav--opened
     margin-bottom: -2px
 
@@ -35,6 +41,12 @@
 
     &::after
       transform: rotate(-45deg)
+
+    &:hover
+      opacity: 0.6
+
+    &:active
+      opacity: 0.3
 
   .main-nav--withoutjs .main-nav__toggle
     display: none
@@ -82,21 +94,51 @@
   padding-bottom: 5px
   text-align: center
   border-bottom: 1px solid $dark-blue
+  background-color: $blue
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2)
+
+  &:hover
+    background-color: $dark-blue-hover
+
+  &:active
+    background-color: $dark-blue-active
+    & a
+      opacity: 0.3
 
   &:not(:first-of-type):not(:last-of-type)
     padding-top: 8px
     border-top: 1px solid $light-blue
 
   &:last-of-type
+    position: relative
     margin-bottom: 0
     border-bottom: none
     border-top: 1px solid $light-blue
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 7px
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%)
 
   @media (min-width: $tablet-width)
     width: 19.9%
     margin: 0
     padding: 0
     border: none
+    background: none
+
+    &:hover
+      background: none
+
+    &:active
+      background: none
+
+    &:last-of-type
+      &::before
+        display: none
 
     &:not(:first-of-type):not(:last-of-type),
     &:last-of-type
@@ -125,3 +167,10 @@
     padding-bottom: 14px
 
     @include fstyle(14px, 26px, $black, 700, uppercase)
+
+    &:active
+      color: $dark-grey-active
+      opacity: 0.3
+
+    &:hover
+      color: $dark-grey-hover
